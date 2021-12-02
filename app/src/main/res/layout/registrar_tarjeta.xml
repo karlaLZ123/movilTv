@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registrar_tarjeta"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_margin="40dp"
+            android:src="@drawable/icon_logo"
+            android:layout_gravity="center"/>
+
+
+        <EditText
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/et_titular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:hint="Nombre del titular"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColorHint="#CDFFFFFF"
+            android:textColor="#FFF"/>
+
+        <EditText
+            android:layout_marginStart="30dp"
+            android:textColor="#FFF"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/et_noTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:hint="Numero de tarjeta"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColorHint="#CDFFFFFF"/>
+
+        <EditText
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/et_fechaVen"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:maxLength="10"
+            android:hint="Fecha de vencimiento"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColorHint="#CDFFFFFF"/>
+
+        <EditText
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/et_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#FFF"
+            android:hint="CVV"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColorHint="#CDFFFFFF"/>
+
+
+        <Button
+            android:id="@+id/B_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bton_2_login"
+            android:onClick="registrar"
+            android:text="Realizar pago" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
